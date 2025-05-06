@@ -1,0 +1,34 @@
+# TensorFlow SavedModel format
+my_model_trained_on_A_savedmodel/
+
+# Keras model files
+*.keras
+*.h5
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+__pycache__/
+
+# Cache and intermediate data (if you created this for combined data)
+combined_train_data/
+
+
+Welcome_To_Colab.ipynb
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE settings folders (example for VSCode)
+.vscode/
+# Add other IDE specific folders if you use them (e.g., .idea/ for PyCharm)
+
+# Kaggle Hub cache (generally, this path is outside your project,
+# but if you somehow symlinked or copied parts into the project,
+# you'd add the relative path here. Based on your structure, it's likely not needed
+# directly in the project's .gitignore if it's in C:/Users/...)
