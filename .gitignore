@@ -1,19 +1,23 @@
-# TensorFlow SavedModel format
-my_model_trained_on_A_savedmodel/
-
 # Keras model files
 *.keras
 *.h5
 
-# Jupyter Notebook checkpoints
+# TensorFlow SavedModel format
+my_model_trained_on_A_savedmodel/
+
+# Jupyter Notebook checkpoints and Python cache
 .ipynb_checkpoints/
 __pycache__/
 
-# Cache and intermediate data (if you created this for combined data)
+# Datasets created by scripts - these can be large and are reproducible
 combined_train_data/
+combined_test_data_for_evaluation/
 
-
-Welcome_To_Colab.ipynb
+# Generated output files (logs and images)
+# Consider if any specific CSVs or PNGs should be kept.
+# If so, use more specific rules or negate them (e.g., !my_important_report.csv)
+*.csv
+*.png
 
 # OS generated files
 .DS_Store
@@ -28,7 +32,6 @@ Thumbs.db
 .vscode/
 # Add other IDE specific folders if you use them (e.g., .idea/ for PyCharm)
 
-# Kaggle Hub cache (generally, this path is outside your project,
-# but if you somehow symlinked or copied parts into the project,
-# you'd add the relative path here. Based on your structure, it's likely not needed
-# directly in the project's .gitignore if it's in C:/Users/...)
+# Specific files that might be irrelevant if they are Colab defaults
+# or temporary (adjust if Welcome_To_Colab.ipynb is part of your project)
+Welcome_To_Colab.ipynb
